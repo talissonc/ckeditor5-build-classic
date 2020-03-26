@@ -31,6 +31,7 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -60,6 +61,7 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	TextTransformation,
 	Base64UploadAdapter,
+	SimpleUploadAdapter,
 	WordCount
 ];
 
