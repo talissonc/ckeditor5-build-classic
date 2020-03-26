@@ -33,6 +33,8 @@ import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64u
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+import FileReader from '@ckeditor/ckeditor5-upload/src/filereader';
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
@@ -63,6 +65,7 @@ ClassicEditor.builtinPlugins = [
 	Base64UploadAdapter,
 	SimpleUploadAdapter,
 	ImageResize,
+	FileReader,
 	WordCount
 ];
 
