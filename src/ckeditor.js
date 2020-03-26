@@ -20,6 +20,7 @@ import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
 import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
 import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import Link from '@ckeditor/ckeditor5-link/src/link';
 import List from '@ckeditor/ckeditor5-list/src/list';
@@ -32,7 +33,6 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import WordCount from '@ckeditor/ckeditor5-word-count/src/wordcount';
 import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
-import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import FileReader from '@ckeditor/ckeditor5-upload/src/filereader';
 
 export default class ClassicEditor extends ClassicEditorBase {}
@@ -53,6 +53,7 @@ ClassicEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	ImageResize,
 	Indent,
 	Link,
 	List,
@@ -64,7 +65,6 @@ ClassicEditor.builtinPlugins = [
 	TextTransformation,
 	Base64UploadAdapter,
 	SimpleUploadAdapter,
-	ImageResize,
 	FileReader,
 	WordCount
 ];
